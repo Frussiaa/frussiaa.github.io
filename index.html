@@ -22,13 +22,14 @@
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 
 </head>
 
 <body>
 	<header class="header">
-		<div class="header-text">
-			<h1 class="header-tittle">Делаю сайты для вашего бизнеса</h1>
+		<div class="header-text wow slideInLeft">
+			<h1 class="header-tittle ">Делаю сайты для вашего бизнеса</h1>
 				<p class="header-description">Я Имя Фамилия <br>разрабатываю сайты для бизнеса.Продающие одностраничники,имиджевые сайты-визитки или полноценные интернет-магазины.</p>
 				<a class="header-button" href="#">Примеры работ</a>
 				<a class="header-button header-button-o" href="#">Обсудить проект</a>
@@ -43,7 +44,7 @@
 			<div class="works-items">
 				<div class="works-item">
 					<div class="work-img">
-						<img class="work-img" src="images/preview1.jpg" alt="">
+						<img class="work-img wow fadeIn" src="images/preview1.jpg" alt="">
 
 					</div>
 
@@ -55,7 +56,7 @@
 
 				<div class="works-item">
 					<div class="work-img">
-						<img class="work-img" src="images/preview2.png" alt="">
+						<img class="work-img wow fadeIn" src="images/preview2.png" alt="">
 
 					</div>	
                     <div class="work-text">
@@ -69,7 +70,7 @@
 	</div>
 	<div class="action">
 		<div class="wrapper">
-			<div class="action-container">
+			<div class="action-container wow rubberBand" >
 					<div class="action-text">
 							<h2 class="block-title h2-text-action">Нужен сайт</h2>
 							<p class="action-description">Если у вас есть задумки по сайту давайте обсудим их. Я сориентирую по срокам и стоимости</p>
@@ -87,12 +88,12 @@
 	<div class="info">
 		<div class="wrapper">
 			<div class="info-container">
-				<div class="info-experience">
+				<div class="info-experience wow zoomInLeft " data-wow-delay="1s">
 					<h2 class="block-title">Про опыт</h2>
-					<div class="info-description">Делать сайты я учился в Академии верстки на курсе «Веб-разработчик»</div>
-					<img src="../images/sertifikat.jpg" alt="Сертефикат об прохождении курса">
+					<div class="info-description ">Делать сайты я учился в Академии верстки на курсе «Веб-разработчик»</div>
+					<img src="../images/sertifikat.jpg"  alt="Сертефикат об прохождении курса">
 				</div>
-				<div class="info-text">
+				<div class="info-text wow zoomInRight" data-wow-delay="1.3">
 						<h2 class="block-title">Как связаться со мной?</h2>
 					<div class="info-contacts">
 						<div class="contacts-item">
@@ -144,7 +145,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer">
+	<footer class="footer wow fadeInUp">
 		<div class="wrapper">
 			<div class="footer-text">
 				<p>2018, Сайт портфолио Имя Фамилия</p>
@@ -153,5 +154,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+	
 </body>
 </html>
